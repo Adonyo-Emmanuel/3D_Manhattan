@@ -1,13 +1,20 @@
 import argparse
 import itertools
-
-
+import pickle
+from testing_code import *
 
 
 def main(in_data):
 
+    infile = open('GWAS_data.pickle', 'rb')
 
-    print('things')
+    test_data = pickle.load(infile)
+
+    print(test_data)
+
+    plot_fig = ManhattanPlot(test_data, gene=None)
+
+    plot_fig.show()
 
 
 
