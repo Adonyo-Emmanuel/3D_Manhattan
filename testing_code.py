@@ -1,6 +1,24 @@
 
 """New functions here"""
 
+from __future__ import absolute_import
+import utils
+import numpy as np
+import pandas as pd
+from pandas.api.types import is_categorical_dtype , is_numeric_dtype
+import plotly.graph_objects as go
+from utils import _get_hover_text
+import pickle
+#import dash
+#import dash_core_components as dcc
+#import dash_html_components as html
+#from jupyter_dash import JupyterDash
+import os
+import sys
+#from bioservices.kegg import KEGG
+#import bezier
+
+
 SUGGESTIVE_LINE_LABEL = "suggestive line"
 GENOMEWIDE_LINE_LABEL = "genomewide line"
 
