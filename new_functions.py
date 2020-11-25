@@ -21,11 +21,13 @@ def add_line_between_points(fig_object, point_1, point_2, colour):
                   + "," \
                   + str(point_2['y'])
 
-    print(path_string)
+    #print(path_string)
 
     fig_object.add_shape(
         type="path",
         path=path_string,
+        #fillcolor=colour,
+        #opacity=0.1,
     )
 
 
